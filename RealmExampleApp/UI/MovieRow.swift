@@ -30,11 +30,13 @@ struct MovieRow: SwiftUI.View {
                         .padding(.top, 15)
                         .padding(.bottom, 6)
                         .foregroundColor(.white)
+                        .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.66), radius: 2)
                     
                     Text(getYear(s: movie.releaseDate))
                         .font(.system(size: 12))
                         .padding(.horizontal, 25)
                         .foregroundColor(.white)
+                        .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.8), radius: 2)
                 }
             }
             
@@ -46,7 +48,7 @@ struct MovieRow: SwiftUI.View {
     }
     
     func getYear(s: String) -> Substring {
-        let i = s.index(s.startIndex, offsetBy: 6)..<s.endIndex
+        let i = s.startIndex..<s.index(s.startIndex, offsetBy: 4)
         return s[i]
     }
 }

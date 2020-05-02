@@ -10,6 +10,9 @@
 		467C765C70FF547CE98CA1F2 /* Pods_RealmExampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4593E7DEB6BE5C852F9BE2B /* Pods_RealmExampleAppTests.framework */; };
 		75EC29BF0D3100FA1EEE4709 /* Pods_RealmExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EB9C37D973FB04DBD38728 /* Pods_RealmExampleApp.framework */; };
 		A9E6A57F245D55C7006CBC0D /* RatingSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E6A57E245D55C7006CBC0D /* RatingSummaryView.swift */; };
+		A9E6A581245D7AD8006CBC0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E6A580245D7AD8006CBC0D /* ContentView.swift */; };
+		A9E6A583245D7BD2006CBC0D /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E6A582245D7BD2006CBC0D /* FavoritesView.swift */; };
+		A9E6A585245D7C07006CBC0D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E6A584245D7C07006CBC0D /* SearchView.swift */; };
 		B67E1FAC142BE55C31271E57 /* Pods_RealmExampleApp_RealmExampleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9D0E273D779DE4AAD6BA71 /* Pods_RealmExampleApp_RealmExampleAppUITests.framework */; };
 		DE0B17D323EAEBEB007F1500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B17D223EAEBEB007F1500 /* AppDelegate.swift */; };
 		DE0B17D523EAEBEB007F1500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B17D423EAEBEB007F1500 /* SceneDelegate.swift */; };
@@ -56,6 +59,9 @@
 		61D731D7C9E9189E168EBD94 /* Pods-RealmExampleApp-RealmExampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExampleApp-RealmExampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-RealmExampleApp-RealmExampleAppUITests/Pods-RealmExampleApp-RealmExampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88EB9C37D973FB04DBD38728 /* Pods_RealmExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E6A57E245D55C7006CBC0D /* RatingSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingSummaryView.swift; sourceTree = "<group>"; };
+		A9E6A580245D7AD8006CBC0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9E6A582245D7BD2006CBC0D /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		A9E6A584245D7C07006CBC0D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		DE0B17CF23EAEBEB007F1500 /* RealmExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0B17D223EAEBEB007F1500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE0B17D423EAEBEB007F1500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +232,9 @@
 				DE0B181223EAEC7F007F1500 /* MovieViewModel.swift */,
 				DE0B181923EAEFCA007F1500 /* RatingView.swift */,
 				A9E6A57E245D55C7006CBC0D /* RatingSummaryView.swift */,
+				A9E6A580245D7AD8006CBC0D /* ContentView.swift */,
+				A9E6A582245D7BD2006CBC0D /* FavoritesView.swift */,
+				A9E6A584245D7C07006CBC0D /* SearchView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -474,11 +483,14 @@
 				DE0B181623EAEC7F007F1500 /* MovieRow.swift in Sources */,
 				A9E6A57F245D55C7006CBC0D /* RatingSummaryView.swift in Sources */,
 				DE0B180F23EAEC78007F1500 /* TheMovieDB_API.swift in Sources */,
+				A9E6A585245D7C07006CBC0D /* SearchView.swift in Sources */,
 				DE0B180B23EAEC5E007F1500 /* ExampleDataProvider.swift in Sources */,
 				DE0B181023EAEC78007F1500 /* NetworkManager.swift in Sources */,
 				DE0B181E23EB0AB1007F1500 /* RatingModel.swift in Sources */,
 				DE0B17D323EAEBEB007F1500 /* AppDelegate.swift in Sources */,
 				DE0B181523EAEC7F007F1500 /* MovieViewModel.swift in Sources */,
+				A9E6A581245D7AD8006CBC0D /* ContentView.swift in Sources */,
+				A9E6A583245D7BD2006CBC0D /* FavoritesView.swift in Sources */,
 				DE0B181423EAEC7F007F1500 /* MovieListView.swift in Sources */,
 				DE0B17D523EAEBEB007F1500 /* SceneDelegate.swift in Sources */,
 				DE0B180C23EAEC5E007F1500 /* Movie.swift in Sources */,

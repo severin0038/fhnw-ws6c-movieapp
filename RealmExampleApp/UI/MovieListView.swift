@@ -13,13 +13,16 @@ struct MovieListView: View {
     @ObservedObject var viewModel = MovieViewModel()
     
     var body: some View {
-        ScrollView{
-            ForEach(viewModel.movies) { movie in
-                MovieRow(movie: movie, viewModel: self.viewModel)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 13)
-            }
+        NavigationView {
+            ScrollView{
+                ForEach(viewModel.movies) { movie in
+                    MovieRow(movie: movie, viewModel: self.viewModel)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 13)
+                }
+            }.navigationBarTitle(Text("Discover"))
         }
+        
     }
 }
 
