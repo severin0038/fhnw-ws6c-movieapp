@@ -15,23 +15,39 @@ struct MovieRow: SwiftUI.View {
     
     var body: some SwiftUI.View {
         ZStack(alignment: Alignment(horizontal: .leading, vertical: .bottom)) {
-            ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top
+            ZStack(alignment: Alignment(horizontal: .leading, vertical: .top
             )) {
                 KFImage(movie.fullPosterURL)
                     .cancelOnDisappear(true)
                     .resizable()
-                    .frame(height: 250)
-
-                RatingView(rating: self.viewModel.ratingForMovieId(id: movie.id), movieViewModel: viewModel, movieId: movie.id)
-                    .padding([.top, .trailing], 20.0)
+                    .frame(height: 210)
+                    .cornerRadius(6)
+                
+                VStack(alignment: .leading) {
+                    Text(movie.title.uppercased())
+                        .font(.system(size: 20, weight: .bold))
+                        .padding(.horizontal, 25)
+                        .padding(.top, 15)
+                        .padding(.bottom, 6)
+                        .foregroundColor(.white)
+                    
+                    Text(getYear(s: movie.releaseDate))
+                        .font(.system(size: 12))
+                        .padding(.horizontal, 25)
+                        .foregroundColor(.white)
+                }
             }
-            Text(movie.title)
-                .font(.largeTitle)
-                .padding(.all)
-                .background(Color(.darkGray)
-                    .opacity(0.5))
-                .foregroundColor(.white)
+            
+            RatingSummaryView(rating: self.viewModel.ratingForMovieId(id: movie.id))
+                .padding(.horizontal, 25)
+                .padding(.vertical, 13)
         }
+        .shadow(radius: 6, y: 13)
+    }
+    
+    func getYear(s: String) -> Substring {
+        let i = s.index(s.startIndex, offsetBy: 6)..<s.endIndex
+        return s[i]
     }
 }
 

@@ -13,10 +13,11 @@ struct MovieListView: View {
     @ObservedObject var viewModel = MovieViewModel()
     
     var body: some View {
-        List{
+        ScrollView{
             ForEach(viewModel.movies) { movie in
                 MovieRow(movie: movie, viewModel: self.viewModel)
-                    .listRowInsets(EdgeInsets())
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 13)
             }
         }
     }
