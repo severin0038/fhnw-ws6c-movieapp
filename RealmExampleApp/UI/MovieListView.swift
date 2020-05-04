@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct MovieListView: View {
     
@@ -16,7 +17,7 @@ struct MovieListView: View {
         NavigationView {
             ScrollView{
                 ForEach(viewModel.movies) { movie in
-                    MovieRow(movie: movie, viewModel: self.viewModel)
+                    MovieRow(isFavorite: self.viewModel.isFavorite(id: movie.id),movie: movie, viewModel: self.viewModel)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 13)
                 }
@@ -24,6 +25,7 @@ struct MovieListView: View {
         }
         
     }
+    
 }
 
 struct MovieListView_Previews: PreviewProvider {
