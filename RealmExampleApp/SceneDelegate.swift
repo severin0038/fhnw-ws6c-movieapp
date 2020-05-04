@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
-        //print(Realm.Configuration.defaultConfiguration.fileURL!)
+//        print("Realm Path: $\(Realm.Configuration.defaultConfiguration.fileURL!)")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

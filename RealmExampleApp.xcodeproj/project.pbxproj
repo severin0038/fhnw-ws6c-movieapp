@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		467C765C70FF547CE98CA1F2 /* Pods_RealmExampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4593E7DEB6BE5C852F9BE2B /* Pods_RealmExampleAppTests.framework */; };
 		75EC29BF0D3100FA1EEE4709 /* Pods_RealmExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EB9C37D973FB04DBD38728 /* Pods_RealmExampleApp.framework */; };
-		A973045424600144004410EA /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973045324600144004410EA /* FavoriteModel.swift */; };
-		A973045624604758004410EA /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973045524604758004410EA /* Favorites.swift */; };
 		A9E6A57F245D55C7006CBC0D /* RatingSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E6A57E245D55C7006CBC0D /* RatingSummaryView.swift */; };
 		A9E6A581245D7AD8006CBC0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E6A580245D7AD8006CBC0D /* ContentView.swift */; };
 		A9E6A583245D7BD2006CBC0D /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E6A582245D7BD2006CBC0D /* FavoritesView.swift */; };
@@ -60,8 +58,6 @@
 		5BC7C72EE5CD8E70177E4592 /* Pods-RealmExampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RealmExampleAppTests/Pods-RealmExampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61D731D7C9E9189E168EBD94 /* Pods-RealmExampleApp-RealmExampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExampleApp-RealmExampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-RealmExampleApp-RealmExampleAppUITests/Pods-RealmExampleApp-RealmExampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88EB9C37D973FB04DBD38728 /* Pods_RealmExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A973045324600144004410EA /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
-		A973045524604758004410EA /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		A9E6A57E245D55C7006CBC0D /* RatingSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingSummaryView.swift; sourceTree = "<group>"; };
 		A9E6A580245D7AD8006CBC0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9E6A582245D7BD2006CBC0D /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
@@ -215,8 +211,6 @@
 				DE0B180723EAEC5E007F1500 /* Results.swift */,
 				DE0B182123EB0E64007F1500 /* MovieRating.swift */,
 				DE0B181D23EB0AB1007F1500 /* RatingModel.swift */,
-				A973045324600144004410EA /* FavoriteModel.swift */,
-				A973045524604758004410EA /* Favorites.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -484,7 +478,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0B182223EB0E64007F1500 /* MovieRating.swift in Sources */,
-				A973045624604758004410EA /* Favorites.swift in Sources */,
 				DE0B181A23EAEFCA007F1500 /* RatingView.swift in Sources */,
 				DE0B180A23EAEC5E007F1500 /* Results.swift in Sources */,
 				DE0B181623EAEC7F007F1500 /* MovieRow.swift in Sources */,
@@ -499,7 +492,6 @@
 				A9E6A581245D7AD8006CBC0D /* ContentView.swift in Sources */,
 				A9E6A583245D7BD2006CBC0D /* FavoritesView.swift in Sources */,
 				DE0B181423EAEC7F007F1500 /* MovieListView.swift in Sources */,
-				A973045424600144004410EA /* FavoriteModel.swift in Sources */,
 				DE0B17D523EAEBEB007F1500 /* SceneDelegate.swift in Sources */,
 				DE0B180C23EAEC5E007F1500 /* Movie.swift in Sources */,
 			);

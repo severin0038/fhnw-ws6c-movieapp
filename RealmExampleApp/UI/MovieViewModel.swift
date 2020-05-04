@@ -13,7 +13,6 @@ class MovieViewModel: ObservableObject{
     
     private let provider: NetworkManager?
     private let ratingModel = RatingModel()
-    private let favoriteModel = FavoriteModel()
     
     @Published var movies = [Movie]()
     
@@ -44,10 +43,24 @@ class MovieViewModel: ObservableObject{
     }
     
     func isFavorite(id: Int) -> Bool {
-        favoriteModel.isFavorite(id: id)
+        ratingModel.isFavorite(id: id)
     }
     
     func handleFavorites(id: Int) {
-        favoriteModel.handleFavorites(id: id)
+        ratingModel.handleFavorites(id: id)
     }
+    
+    func getFavoriteMovies() -> [Movie] {
+        let favoriteIds = ratingModel.getFavoriteMovieIds()
+        var favoriteMovies = [Movie]()
+        
+        for movie in movies {
+            if favoriteIds.contains(movie.id) {
+                favoriteMovies.append(movie)
+            }
+        }
+        
+        return favoriteMovies
+    }
+
 }

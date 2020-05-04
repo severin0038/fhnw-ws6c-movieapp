@@ -9,10 +9,17 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    
+    @ObservedObject var viewModel = MovieViewModel()
+    
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Favorites")
+            ScrollView {
+                ForEach(viewModel.getFavoriteMovies()) { movie in
+                    MovieRow(isFavorite: self.viewModel.isFavorite(id: movie.id),movie: movie, viewModel: self.viewModel)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 13)
+                }
             }.navigationBarTitle(Text("Favorites"))
         }
     }
